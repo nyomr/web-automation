@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "---\r For educational purposes only",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "nyomr",
   "license": "ISC",
   "dependencies": {
     "prettier": "^3.0.3",
