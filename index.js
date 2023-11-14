@@ -9,6 +9,7 @@ import puppeteer from "puppeteer";
     })
     const page = await browser.newPage();
     await page.goto('https://jkt48.com/');
-    await page.waitForSelector('#header-global__pc--menu__user a');
-    await page.click("#header-global__pc--menu__user a");
+    
+    const element = await page.$('[href="/login?lang=id"]');
+    await element.click();
 })();
