@@ -8,14 +8,10 @@ async function main() {
         args: ['--start-maximized']
     })
     const page = await browser.newPage();
-    await page.goto('https://jkt48.com/');
+    await page.goto('https://jkt48.com/');  
     
-    const element = await page.$('[href="/login?lang=id"]');
-    await element.click();
+    await page.click('[href="/login?lang=id"]');
 
-    
-
-    await element.type("#login_id", "email@gmail.com");
 }
 
 main();
