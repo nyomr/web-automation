@@ -1,6 +1,6 @@
 import puppeteer from "puppeteer";
 
-(async () => {
+async function main() {
     const browser = await puppeteer.launch({
         defaultViewport: null,
         headless: false,
@@ -12,4 +12,10 @@ import puppeteer from "puppeteer";
     
     const element = await page.$('[href="/login?lang=id"]');
     await element.click();
-})();
+
+    
+
+    await element.type("#login_id", "email@gmail.com");
+}
+
+main();
