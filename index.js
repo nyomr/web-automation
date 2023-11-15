@@ -12,6 +12,9 @@ async function main() {
     
     await page.click('[href="/login?lang=id"]');
 
+    await page.waitForSelector('#login_id');
+    await page.type('#login_id', 'email@gmail.com');
+    await page.type('#login_password', 'password');
 }
 
 main();
