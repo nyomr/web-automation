@@ -15,6 +15,8 @@ async function main() {
     await page.waitForSelector('#login_id');
     await page.type('#login_id', 'email@gmail.com');
     await page.type('#login_password', 'password');
+
+    await page.click('[type="submit"]');
 }
 
 main();
